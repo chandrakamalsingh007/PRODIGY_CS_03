@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.password-input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.check-button {
+  width: 60%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.check-button:hover {
+  background-color: #0056b3;
+}
+
+.strength-bar {
+  height: 10px;
+  width: 100%;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.strength-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.criteria-list {
+  list-style: none;
+  padding: 0;
+}
+
+.criteria-list li {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
+}
+
+.suggestions {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.suggestions h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.suggestions ul {
+  padding-left: 20px;
+}
+
+.suggestions li {
+  font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 15px;
+  }
+  .password-input, .check-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .strength-text, .criteria-list li, .suggestions h3, .suggestions li {
+    font-size: 12px;
+  }
+}
+
+.password-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-visibility-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
