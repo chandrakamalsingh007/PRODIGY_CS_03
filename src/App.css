@@ -18,50 +18,95 @@ body {
   text-align: center;
 }
 
+/* Heading */
 h2 {
   margin-bottom: 15px;
+  font-size: 22px;
+  color: #333;
 }
 
-.password-input {
-  width: 90%;
-  padding: 10px;
+/* Password Input Container */
+.password-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
   margin: 10px 0;
+}
+
+/* Password Input Field */
+.password-input {
+  width: 100%;
+  padding: 12px;
+  padding-right: 40px; /* Space for eye icon */
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
 }
 
+.password-input:focus {
+  border-color: #007bff;
+}
+
+/* Eye Icon Button */
+.toggle-visibility-button {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+  font-size: 18px;
+}
+
+.toggle-visibility-button:hover {
+  color: #000;
+}
+
+/* Check Button */
 .check-button {
-  width: 60%;
-  padding: 10px;
+  width: 100%;
+  padding: 12px;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
 }
 
 .check-button:hover {
   background-color: #0056b3;
 }
 
+/* Strength Bar */
 .strength-bar {
   height: 10px;
   width: 100%;
   border-radius: 5px;
   margin: 10px 0;
+  transition: background-color 0.3s ease;
 }
 
+/* Strength Text */
 .strength-text {
   font-size: 16px;
   font-weight: bold;
+  margin-top: 5px;
 }
 
+/* Criteria List */
 .criteria-list {
   list-style: none;
   padding: 0;
+  margin-top: 10px;
 }
 
 .criteria-list li {
@@ -77,14 +122,20 @@ h2 {
   color: red;
 }
 
+/* Suggestions Section */
 .suggestions {
-  margin-top: 10px;
+  margin-top: 15px;
   text-align: left;
+  padding: 10px;
+  background: #f8f8f8;
+  border-radius: 5px;
+  border-left: 4px solid #ff9800;
 }
 
 .suggestions h3 {
   font-size: 16px;
   margin-bottom: 5px;
+  color: #333;
 }
 
 .suggestions ul {
@@ -93,28 +144,22 @@ h2 {
 
 .suggestions li {
   font-size: 14px;
+  color: #555;
 }
 
+/* Responsive Design */
 @media (max-width: 500px) {
   .container {
     padding: 15px;
   }
   .password-input, .check-button {
     font-size: 14px;
-    padding: 8px;
+    padding: 10px;
   }
   .strength-text, .criteria-list li, .suggestions h3, .suggestions li {
     font-size: 12px;
   }
-}
-
-.password-input-container {
-  display: flex;
-  align-items: center;
-}
-
-.toggle-visibility-button {
-  margin-left: 10px;
-  padding: 5px 10px;
-  cursor: pointer;
+  .toggle-visibility-button {
+    font-size: 16px;
+  }
 }
