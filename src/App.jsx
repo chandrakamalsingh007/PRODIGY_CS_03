@@ -44,6 +44,10 @@ const App = () => {
   const [isPasswordVisible,setIsPasswordVisible] = useState(false);
 
   const handleCheckStrength = () => {
+    if (!password) {
+      alert("Please enter a password before checking its strength.");
+      return;
+    }
     setResult(getPasswordStrength(password));
   };
 
