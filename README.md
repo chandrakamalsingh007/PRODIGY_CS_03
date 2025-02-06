@@ -20,3 +20,6 @@ This is a simple React application that allows users to check the complexity of 
 ## Live Demo
 Check out the app in action: [Live Demo](https://passwordcomplexitychecker.netlify.app/)
 
+## Website
+![live website](https://github.com/chandrakamalsingh007/PRODIGY_CS_03/blob/main/passwordcomplexitychecker.jpg)
+
