@@ -1,16 +1,19 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: url('https://img.freepik.com/free-vector/flat-design-forest-landscape_23-2149155031.jpg?t=st=1738745937~exp=1738749537~hmac=8ca2d4d32b114ded327069198dbc45ac8d46ceca74d676b20e1f3ac1777e34dc&w=996') no-repeat;
   margin: 0;
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
-  background: #fff;
-  padding: 20px;
+  background: #f1efef;
+  margin-top: 10px;
+  padding: 5px 20px 10px 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -20,7 +23,7 @@ body {
 
 /* Heading */
 h2 {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 22px;
   color: #333;
 }
@@ -48,7 +51,7 @@ h2 {
 }
 
 .password-input:focus {
-  border-color: #007bff;
+  border-color: #162938;
 }
 
 /* Eye Icon Button */
@@ -62,18 +65,21 @@ h2 {
   cursor: pointer;
   color: #888;
   font-size: 18px;
+  opacity: 0.3;
 }
 
 .toggle-visibility-button:hover {
   color: #000;
+  opacity:0.8;
 }
 
 /* Check Button */
 .check-button {
   width: 100%;
   padding: 12px;
-  background-color: #007bff;
-  color: white;
+  background: #162938;
+  color: #fff;
+  font-weight: 500;
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -83,7 +89,7 @@ h2 {
 }
 
 .check-button:hover {
-  background-color: #0056b3;
+  background-color: #0f1f2b;
 }
 
 /* Strength Bar */
